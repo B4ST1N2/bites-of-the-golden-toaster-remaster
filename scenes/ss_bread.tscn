@@ -6,6 +6,7 @@
 size = Vector2(22, 26)
 
 [node name="ss_bread" type="CharacterBody2D"]
+position = Vector2(44, 36)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
