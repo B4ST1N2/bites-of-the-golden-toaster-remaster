@@ -1,16 +1,25 @@
 extends CharacterBody2D
 
-@export var move_speed: float 
-var is_facing_rigth =  true
+@export var move_speed: float  
+@export var jump_speed: float
+var is_facing_rigth =  true 
+var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta): 
-	var input_axis = Input.get_axis("move_left","move_rigth")
-	velocity.x = input_axis * move_speed
+	if Input.is_action_just_pressed("jump"): 
+		velocity.y = -jump_speed 
+		
+	velocity.y += gravity * delta
 	
-	#Si está mirando a la derecha y presiono a la izquierda 
-	#Si está mirando a la izquierda y presiono a la derecha
+	move_x()
+	flip()
+	move_and_slide()
+
+func flip():
 	if (is_facing_rigth and velocity.x < 0) or (not is_facing_rigth and velocity.x > 0): 
 		scale.x *= -1
 		is_facing_rigth = not is_facing_rigth	
-	
-	move_and_slide()
+
+func move_x():
+	var input_axis = Input.get_axis("move_left","move_rigth")
+	velocity.x = input_axis * move_speed
