@@ -1,7 +1,8 @@
 extends CharacterBody2D
 
 @export var move_speed: float  
-@export var jump_speed: float
+@export var jump_speed: float 
+@onready var animated_sprite = $animatedSprite
 var is_facing_rigth =  true 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -9,7 +10,18 @@ func _physics_process(delta):
 	jump(delta)
 	move_x()
 	flip()
+	update_animations()
 	move_and_slide()
+
+func update_animations(): 
+	if not is_on_floor(): 
+		if velocity.y < 0: 
+			animated_sprite.play("jump")
+		return
+	if velocity.x: 
+		animated_sprite.play("walking")
+	else:
+		animated_sprite.play("idle") 
 
 func jump(delta):
 	if Input.is_action_just_pressed("jump") and is_on_floor(): 
