@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://cic8tw5ov4lyo"]
+
+[ext_resource type="Texture2D" uid="uid://imr3t2wsuvvb" path="res://Rocky Roads/Characters/SS_bread/Bread-sheet.png" id="1_7c3ku"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a680x"]
+size = Vector2(22, 26)
+
+[node name="ss_bread" type="CharacterBody2D"]
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7c3ku")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("RectangleShape2D_a680x")
