@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cc1els2qb28cd"
-path="res://.godot/imported/Ham-jumping.png-dcbd399c280cac7c371803c11f1396e8.ctex"
+path="res://.godot/imported/Ham-jumping.png-a2f15f8da753f0edeab39a93b727cec0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/Characters/C_R_Ham/jumping/Ham-jumping.png"
-dest_files=["res://.godot/imported/Ham-jumping.png-dcbd399c280cac7c371803c11f1396e8.ctex"]
+source_file="res://Rocky Roads/Characters/C_R_ham/jumping/Ham-jumping.png"
+dest_files=["res://.godot/imported/Ham-jumping.png-a2f15f8da753f0edeab39a93b727cec0.ctex"]
 
 [params]
 
