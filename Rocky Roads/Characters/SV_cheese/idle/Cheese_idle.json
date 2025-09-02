@@ -1,6 +1,6 @@
 { "frames": [
    {
-	"filename": "Bread_idle 0.aseprite",
+	"filename": "Cheese_idle 0.aseprite",
 	"frame": { "x": 0, "y": 0, "w": 32, "h": 32 },
 	"rotated": false,
 	"trimmed": false,
@@ -9,7 +9,7 @@
 	"duration": 200
    },
    {
-	"filename": "Bread_idle 1.aseprite",
+	"filename": "Cheese_idle 1.aseprite",
 	"frame": { "x": 32, "y": 0, "w": 32, "h": 32 },
 	"rotated": false,
 	"trimmed": false,
@@ -18,7 +18,7 @@
 	"duration": 200
    },
    {
-	"filename": "Bread_idle 2.aseprite",
+	"filename": "Cheese_idle 2.aseprite",
 	"frame": { "x": 64, "y": 0, "w": 32, "h": 32 },
 	"rotated": false,
 	"trimmed": false,
@@ -27,7 +27,7 @@
 	"duration": 200
    },
    {
-	"filename": "Bread_idle 3.aseprite",
+	"filename": "Cheese_idle 3.aseprite",
 	"frame": { "x": 96, "y": 0, "w": 32, "h": 32 },
 	"rotated": false,
 	"trimmed": false,
@@ -39,7 +39,7 @@
  "meta": {
   "app": "https://github.com/LibreSprite/LibreSprite/",
   "version": "1.1-dev",
-  "image": "C:\\Users\\Usuario\\OneDrive - Universidad de Medellin\\Documents\\SS_bread\\idle\\Bread_idle.png",
+  "image": "C:\\Users\\Usuario\\OneDrive - Universidad de Medellin\\Documents\\SV_cheese\\idle\\Cheese_idle.png",
   "format": "RGBA8888",
   "size": { "w": 128, "h": 32 },
   "scale": "1",
