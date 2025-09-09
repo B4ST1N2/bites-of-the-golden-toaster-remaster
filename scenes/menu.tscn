@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://cis3i36oet384"]
 
 [ext_resource type="Script" uid="uid://c2ehf1v7dm7hy" path="res://Scripts/menu.gd" id="1_vjb58"]
-[ext_resource type="Texture2D" uid="uid://cdjwbfloxfbid" path="res://Images/ChatGPT Image 31 ago 2025, 10_09_21.png" id="1_yqeox"]
+[ext_resource type="Texture2D" uid="uid://ct00521ofeq7f" path="res://scenes/Fondo Menu.jpeg" id="2_vjb58"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vjb58"]
 bg_color = Color(0.0616318, 0.00599169, 0.0124352, 0.690196)
@@ -38,7 +38,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_yqeox")
+texture = ExtResource("2_vjb58")
 expand_mode = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]

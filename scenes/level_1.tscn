@@ -3,9 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://cic8tw5ov4lyo" path="res://scenes/ss_bread.tscn" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="2_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://e7gh7lktsvvq" path="res://Rocky Roads/Tilesets/tileset_forest.png" id="3_4nkto"]
-[ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_Ham/walking/Ham_walking.png" id="4_5xbjy"]
+[ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_ham/walking/Ham_walking.png" id="4_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://xvudb73v5ogx" path="res://Rocky Roads/Characters/SS_bread/idle/Bread_idle.png" id="5_fcfvj"]
-[ext_resource type="Texture2D" uid="uid://c652y0jqg8dol" path="res://Rocky Roads/Characters/C_R_Ham/idle/Ham_idle.png" id="6_pa8r4"]
+[ext_resource type="Texture2D" uid="uid://c652y0jqg8dol" path="res://Rocky Roads/Characters/C_R_ham/idle/Ham_idle.png" id="6_pa8r4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcfvj"]
 texture = ExtResource("2_5xbjy")
@@ -174,6 +174,7 @@ tile_map_data = PackedByteArray("AAAAAAoAAAAIAAEAAAABAAoAAAAIAAEAAAACAAoAAAAIAAE
 tile_set = SubResource("TileSet_e3sih")
 
 [node name="HamWalking" type="Sprite2D" parent="tilemapLayers"]
+visible = false
 position = Vector2(74, 146)
 scale = Vector2(0.098349, 0.106612)
 texture = ExtResource("4_5xbjy")
