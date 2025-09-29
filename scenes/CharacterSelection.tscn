@@ -1,0 +1,105 @@
+[gd_scene load_steps=11 format=3 uid="uid://cgo3cdhdt8cq4"]
+
+[ext_resource type="Script" uid="uid://c0vo7ds42kaur" path="res://Scripts/character_selection.gd" id="1_o564h"]
+[ext_resource type="Script" uid="uid://c37li4j2dm826" path="res://Scripts/Character_Data.gd" id="2_o6o0h"]
+[ext_resource type="Texture2D" uid="uid://2w1akxniodyi" path="res://Rocky Roads/Characters/SV_cheese/Cheese-sheet.png" id="3_5se5x"]
+[ext_resource type="Texture2D" uid="uid://b70wf1w40140i" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png" id="3_ta0h7"]
+[ext_resource type="Texture2D" uid="uid://bxtxrkubs6imo" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_32_17-Photoroom.png" id="5_tse7a"]
+[ext_resource type="Texture2D" uid="uid://ddnswbxfwo5ft" path="res://Images/ChatGPT Image 29 sept 2025, 11_16_29.png" id="6_o6o0h"]
+[ext_resource type="AudioStream" uid="uid://b7eh05vmgek4i" path="res://MusicAndSounds/Music/POL-king-of-coins-short.wav" id="7_ta0h7"]
+
+[sub_resource type="Resource" id="Resource_o6o0h"]
+script = ExtResource("2_o6o0h")
+key = "Bread"
+Imagen = ExtResource("3_ta0h7")
+metadata/_custom_type_script = "uid://c37li4j2dm826"
+
+[sub_resource type="Resource" id="Resource_ta0h7"]
+script = ExtResource("2_o6o0h")
+key = "Cheese"
+Imagen = ExtResource("3_5se5x")
+metadata/_custom_type_script = "uid://c37li4j2dm826"
+
+[sub_resource type="Resource" id="Resource_tse7a"]
+script = ExtResource("2_o6o0h")
+key = "Ham"
+Imagen = ExtResource("5_tse7a")
+metadata/_custom_type_script = "uid://c37li4j2dm826"
+
+[node name="CharacterSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_o564h")
+Personajes = Array[ExtResource("2_o6o0h")]([SubResource("Resource_o6o0h"), SubResource("Resource_ta0h7"), SubResource("Resource_tse7a")])
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.431373, 0.388235, 1, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_o6o0h")
+expand_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(236, 125)
+scale = Vector2(0.116211, 0.106445)
+
+[node name="siguiente" type="Button" parent="."]
+layout_mode = 0
+offset_left = 328.0
+offset_top = 117.0
+offset_right = 364.0
+offset_bottom = 148.0
+text = ">"
+
+[node name="anterior" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 102.0
+offset_top = -15.0
+offset_right = -345.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "<"
+
+[node name="select" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_top = -85.0
+offset_right = 49.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Seleccionar"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_ta0h7")
+autoplay = true
+
+[connection signal="pressed" from="siguiente" to="." method="_on_siguiente_pressed"]
+[connection signal="pressed" from="anterior" to="." method="_on_anterior_pressed"]
+[connection signal="pressed" from="select" to="." method="_on_select_pressed"]

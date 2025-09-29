@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ct00521ofeq7f"
-path="res://.godot/imported/Fondo Menu.jpeg-f4d99bb4862e6c619b1d59bdbaf5a0c7.ctex"
+uid="uid://dl464y0f7w6fi"
+path="res://.godot/imported/window-56x43.png-3d897aa7f54f03f9ede009a9436b3220.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Fondo Menu.jpeg"
-dest_files=["res://.godot/imported/Fondo Menu.jpeg-f4d99bb4862e6c619b1d59bdbaf5a0c7.ctex"]
+source_file="res://House-interior-pixel-art/window-56x43.png"
+dest_files=["res://.godot/imported/window-56x43.png-3d897aa7f54f03f9ede009a9436b3220.ctex"]
 
 [params]
 
