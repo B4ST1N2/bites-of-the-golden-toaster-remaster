@@ -1,5 +1,4 @@
 [gd_scene load_steps=16 format=4 uid="uid://cwlol2y5nyoo6"]
-
 [ext_resource type="PackedScene" uid="uid://duub5qh1fgs74" path="res://scenes/Hormiga.tscn" id="1_15mv3"]
 [ext_resource type="PackedScene" uid="uid://cic8tw5ov4lyo" path="res://scenes/ss_bread.tscn" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="2_5xbjy"]
