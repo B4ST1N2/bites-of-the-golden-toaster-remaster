@@ -2,10 +2,10 @@
 
 [ext_resource type="Script" uid="uid://c0vo7ds42kaur" path="res://Scripts/character_selection.gd" id="1_o564h"]
 [ext_resource type="Script" uid="uid://c37li4j2dm826" path="res://Scripts/Character_Data.gd" id="2_o6o0h"]
-[ext_resource type="Texture2D" uid="uid://2w1akxniodyi" path="res://Rocky Roads/Characters/SV_cheese/Cheese-sheet.png" id="3_5se5x"]
-[ext_resource type="Texture2D" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png" id="3_ta0h7"]
-[ext_resource type="Texture2D" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_32_17-Photoroom.png" id="5_tse7a"]
-[ext_resource type="Texture2D" uid="uid://ddnswbxfwo5ft" path="res://Images/Esenario 2.png" id="6_o6o0h"]
+[ext_resource type="Texture2D" uid="uid://2w1akxniodyi" path="res://Rocky Roads/Characters/VV_cheese/Cheese-sheet.png" id="3_5se5x"]
+[ext_resource type="Texture2D" uid="uid://b70wf1w40140i" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png" id="3_ta0h7"]
+[ext_resource type="Texture2D" uid="uid://bxtxrkubs6imo" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_32_17-Photoroom.png" id="5_tse7a"]
+[ext_resource type="Texture2D" uid="uid://ddnswbxfwo5ft" path="res://Images/ChatGPT Image 29 sept 2025, 11_16_29.png" id="6_o6o0h"]
 [ext_resource type="AudioStream" uid="uid://b7eh05vmgek4i" path="res://MusicAndSounds/Music/POL-king-of-coins-short.wav" id="7_ta0h7"]
 [ext_resource type="AudioStream" uid="uid://debxv5qvkbp1f" path="res://MusicAndSounds/Sounds/drop_003.ogg" id="8_tse7a"]
 
