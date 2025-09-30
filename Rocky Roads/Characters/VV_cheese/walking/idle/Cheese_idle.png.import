@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://efftsyn21jbo"
-path="res://.godot/imported/Cheese_walking.png-81d6e11f1dccb10e0be6aad37ed2fd36.ctex"
+uid="uid://o5eva37ta28v"
+path="res://.godot/imported/Cheese_idle.png-214f0971fb49ad489684707d38bedc2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/Characters/SV_cheese/walking/Cheese_walking.png"
-dest_files=["res://.godot/imported/Cheese_walking.png-81d6e11f1dccb10e0be6aad37ed2fd36.ctex"]
+source_file="res://Rocky Roads/Characters/VV_cheese/walking/idle/Cheese_idle.png"
+dest_files=["res://.godot/imported/Cheese_idle.png-214f0971fb49ad489684707d38bedc2c.ctex"]
 
 [params]
 
