@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cwfg6glsrg26a"
-path="res://.godot/imported/Cheese_dead.jpg-3100ebbb8c3cf6be8a5d6d26a67d7675.ctex"
+uid="uid://djsqaxwcrih3b"
+path="res://.godot/imported/cheese_jumping.png-6ab61711c156902f5e6a1586b2d14cb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/Characters/SV_cheese/Possible state of death/Cheese_dead.jpg"
-dest_files=["res://.godot/imported/Cheese_dead.jpg-3100ebbb8c3cf6be8a5d6d26a67d7675.ctex"]
+source_file="res://Rocky Roads/Characters/VV_cheese/jumping/cheese_jumping.png"
+dest_files=["res://.godot/imported/cheese_jumping.png-6ab61711c156902f5e6a1586b2d14cb5.ctex"]
 
 [params]
 

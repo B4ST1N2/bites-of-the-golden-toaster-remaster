@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2w1akxniodyi"
-path="res://.godot/imported/Cheese-sheet.png-1b399d44a105ae2a810ec141599e44ae.ctex"
+uid="uid://o5eva37ta28v"
+path="res://.godot/imported/Cheese_idle.png-d9f9459d197f2b428812c6a09a8cd019.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Rocky Roads/Characters/SV_cheese/Cheese-sheet.png"
-dest_files=["res://.godot/imported/Cheese-sheet.png-1b399d44a105ae2a810ec141599e44ae.ctex"]
+source_file="res://Rocky Roads/Characters/VV_cheese/idle/Cheese_idle.png"
+dest_files=["res://.godot/imported/Cheese_idle.png-d9f9459d197f2b428812c6a09a8cd019.ctex"]
 
 [params]
 
