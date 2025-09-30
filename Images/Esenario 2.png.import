@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b70wf1w40140i"
-path="res://.godot/imported/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png-1172c1eedcf445b8d2408495d3d0905e.ctex"
+uid="uid://ddnswbxfwo5ft"
+path="res://.godot/imported/Esenario 2.png-ad9be3e803e758dbc7759cce2a17abcf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png"
-dest_files=["res://.godot/imported/ChatGPT Image 29 sept 2025, 11_28_49-Photoroom.png-1172c1eedcf445b8d2408495d3d0905e.ctex"]
+source_file="res://Images/Esenario 2.png"
+dest_files=["res://.godot/imported/Esenario 2.png-ad9be3e803e758dbc7759cce2a17abcf.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdjwbfloxfbid"
-path="res://.godot/imported/ChatGPT Image 31 ago 2025, 10_09_21.png-6c5a70b1278c9a4a843b6bb5a8f7ffb9.ctex"
+uid="uid://b70wf1w40140i"
+path="res://.godot/imported/bread-sheet.png-a3dc68e3b90d9710c068560282c4b89b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Images/ChatGPT Image 31 ago 2025, 10_09_21.png"
-dest_files=["res://.godot/imported/ChatGPT Image 31 ago 2025, 10_09_21.png-6c5a70b1278c9a4a843b6bb5a8f7ffb9.ctex"]
+source_file="res://Img-Characters/bread-sheet.png"
+dest_files=["res://.godot/imported/bread-sheet.png-a3dc68e3b90d9710c068560282c4b89b.ctex"]
 
 [params]
 
