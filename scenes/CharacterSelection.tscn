@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://cgo3cdhdt8cq4"]
+[gd_scene load_steps=12 format=3 uid="uid://cgo3cdhdt8cq4"]
 
 [ext_resource type="Script" uid="uid://c0vo7ds42kaur" path="res://Scripts/character_selection.gd" id="1_o564h"]
 [ext_resource type="Script" uid="uid://c37li4j2dm826" path="res://Scripts/Character_Data.gd" id="2_o6o0h"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://bxtxrkubs6imo" path="res://Img-Characters/ChatGPT Image 29 sept 2025, 11_32_17-Photoroom.png" id="5_tse7a"]
 [ext_resource type="Texture2D" uid="uid://ddnswbxfwo5ft" path="res://Images/ChatGPT Image 29 sept 2025, 11_16_29.png" id="6_o6o0h"]
 [ext_resource type="AudioStream" uid="uid://b7eh05vmgek4i" path="res://MusicAndSounds/Music/POL-king-of-coins-short.wav" id="7_ta0h7"]
+[ext_resource type="AudioStream" uid="uid://debxv5qvkbp1f" path="res://MusicAndSounds/Sounds/drop_003.ogg" id="8_tse7a"]
 
 [sub_resource type="Resource" id="Resource_o6o0h"]
 script = ExtResource("2_o6o0h")
@@ -99,6 +100,9 @@ text = "Seleccionar"
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("7_ta0h7")
 autoplay = true
+
+[node name="butons" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_tse7a")
 
 [connection signal="pressed" from="siguiente" to="." method="_on_siguiente_pressed"]
 [connection signal="pressed" from="anterior" to="." method="_on_anterior_pressed"]

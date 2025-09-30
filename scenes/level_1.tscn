@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=4 uid="uid://cwlol2y5nyoo6"]
+[gd_scene load_steps=13 format=4 uid="uid://cwlol2y5nyoo6"]
 
+[ext_resource type="PackedScene" uid="uid://duub5qh1fgs74" path="res://scenes/Hormiga.tscn" id="1_15mv3"]
 [ext_resource type="PackedScene" uid="uid://cic8tw5ov4lyo" path="res://scenes/ss_bread.tscn" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="2_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://e7gh7lktsvvq" path="res://Rocky Roads/Tilesets/tileset_forest.png" id="3_4nkto"]
@@ -158,6 +159,10 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_15mv3")
 
 [node name="level1" type="Node2D"]
+
+[node name="Hormiga" parent="." instance=ExtResource("1_15mv3")]
+z_index = 1
+position = Vector2(184, -65)
 
 [node name="ss_bread" parent="." instance=ExtResource("1_rus8k")]
 z_index = 1

@@ -1,0 +1,79 @@
+[gd_scene load_steps=8 format=3 uid="uid://duub5qh1fgs74"]
+
+[ext_resource type="Script" uid="uid://bx6hpb3tbpioa" path="res://Scripts/hormiga.gd" id="1_aytn8"]
+[ext_resource type="Texture2D" uid="uid://dporn1payfbek" path="res://Img-Characters/Hormiga (1).png" id="1_s8o65"]
+
+[sub_resource type="Animation" id="Animation_sv0pt"]
+resource_name = "Idle"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_rw6he"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="Animation" id="Animation_ok0rc"]
+resource_name = "Walk"
+length = 1.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 1]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vsjd7"]
+_data = {
+&"Idle": SubResource("Animation_sv0pt"),
+&"RESET": SubResource("Animation_rw6he"),
+&"Walk": SubResource("Animation_ok0rc")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aytn8"]
+size = Vector2(35, 33)
+
+[node name="Hormiga" type="CharacterBody2D"]
+script = ExtResource("1_aytn8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(259.125, 158)
+scale = Vector2(0.140381, 0.134766)
+texture = ExtResource("1_s8o65")
+hframes = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_vsjd7")
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(259.5, 209.5)
+shape = SubResource("RectangleShape2D_aytn8")
