@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://duub5qh1fgs74"]
+[gd_scene load_steps=9 format=3 uid="uid://duub5qh1fgs74"]
 
 [ext_resource type="Script" uid="uid://bx6hpb3tbpioa" path="res://Scripts/hormiga.gd" id="1_aytn8"]
 [ext_resource type="Texture2D" uid="uid://dporn1payfbek" path="res://Img-Characters/Hormiga (1).png" id="1_s8o65"]
@@ -58,7 +58,10 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aytn8"]
-size = Vector2(35, 33)
+size = Vector2(30, 29)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sv0pt"]
+size = Vector2(34, 33)
 
 [node name="Hormiga" type="CharacterBody2D"]
 script = ExtResource("1_aytn8")
@@ -75,5 +78,19 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(259.5, 209.5)
+position = Vector2(259, 211.5)
 shape = SubResource("RectangleShape2D_aytn8")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(259, 209.5)
+shape = SubResource("RectangleShape2D_sv0pt")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(240, 194)
+scale = Vector2(0.7, 0.7)
+target_position = Vector2(0, 47.1429)
+collision_mask = 4
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

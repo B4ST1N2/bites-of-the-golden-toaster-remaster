@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var jump_speed: float 
 @onready var animated_sprite = $animatedSprite
 var is_facing_rigth =  true 
+var lifes = 3
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 func _physics_process(delta): 
@@ -39,3 +40,15 @@ func flip():
 func move_x():
 	var input_axis = Input.get_axis("move_left","move_rigth")
 	velocity.x = input_axis * move_speed
+
+func _loseLife() -> void:
+	lifes -= 1
+	$AudioStreamPlayer2D.playing = true
+	await $AudioStreamPlayer2D.finished
+	
+	var canvas_layer := get_tree().root.find_child("CanvasLayer", true, false)
+	if canvas_layer and canvas_layer.has_method("handle_hearts"):
+		canvas_layer.handle_hearts(lifes)
+
+	if lifes <= 0:
+		get_tree().call_deferred("reload_current_scene")
