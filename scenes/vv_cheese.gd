@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var move_speed: float  
 @export var jump_speed: float 
-@onready var animated_sprite = $animatedSprite
+@onready var animated_sprite = $animatedSpriteCheese
 var is_facing_rigth =  true 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
@@ -32,6 +32,7 @@ func jump(delta):
 	
 
 func flip():
+	
 	if (is_facing_rigth and velocity.x < 0) or (not is_facing_rigth and velocity.x > 0): 
 		scale.x *= -1
 		is_facing_rigth = not is_facing_rigth	
@@ -39,3 +40,4 @@ func flip():
 func move_x():
 	var input_axis = Input.get_axis("move_left","move_rigth")
 	velocity.x = input_axis * move_speed
+	

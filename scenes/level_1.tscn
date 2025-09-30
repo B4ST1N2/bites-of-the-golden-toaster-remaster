@@ -1,141 +1,13 @@
-[gd_scene load_steps=33 format=4 uid="uid://cwlol2y5nyoo6"]
+[gd_scene load_steps=13 format=4 uid="uid://cwlol2y5nyoo6"]
 
 [ext_resource type="PackedScene" uid="uid://duub5qh1fgs74" path="res://scenes/Hormiga.tscn" id="1_15mv3"]
-[ext_resource type="Script" uid="uid://f0hyi33uhhl1" path="res://scenes/vv_cheese.gd" id="1_go7sj"]
 [ext_resource type="PackedScene" uid="uid://cic8tw5ov4lyo" path="res://scenes/ss_bread.tscn" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="2_5xbjy"]
-[ext_resource type="Texture2D" uid="uid://o5eva37ta28v" path="res://Rocky Roads/Characters/VV_cheese/idle/Cheese_idle.png" id="2_7gny6"]
-[ext_resource type="Texture2D" uid="uid://djsqaxwcrih3b" path="res://Rocky Roads/Characters/VV_cheese/jumping/cheese_jumping.png" id="3_2aecg"]
 [ext_resource type="Texture2D" uid="uid://e7gh7lktsvvq" path="res://Rocky Roads/Tilesets/tileset_forest.png" id="3_4nkto"]
 [ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_ham/walking/Ham_walking.png" id="4_5xbjy"]
-[ext_resource type="Texture2D" uid="uid://efftsyn21jbo" path="res://Rocky Roads/Characters/VV_cheese/walking/Cheese_walking.png" id="4_6dial"]
 [ext_resource type="Texture2D" uid="uid://xvudb73v5ogx" path="res://Rocky Roads/Characters/SS_bread/idle/Bread_idle.png" id="5_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://c652y0jqg8dol" path="res://Rocky Roads/Characters/C_R_ham/idle/Ham_idle.png" id="6_pa8r4"]
 [ext_resource type="AudioStream" uid="uid://b6xmwm6c3sgoa" path="res://MusicAndSounds/Music/POL-star-way-short.wav" id="7_pa8r4"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_7nomh"]
-atlas = ExtResource("2_7gny6")
-region = Rect2(0, 0, 260, 701)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1s4pk"]
-atlas = ExtResource("2_7gny6")
-region = Rect2(260, 0, 260, 701)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x2xxo"]
-atlas = ExtResource("2_7gny6")
-region = Rect2(520, 0, 260, 701)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2cbcq"]
-atlas = ExtResource("2_7gny6")
-region = Rect2(780, 0, 260, 701)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_isj1j"]
-atlas = ExtResource("3_2aecg")
-region = Rect2(0, 0, 307, 700)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_so66j"]
-atlas = ExtResource("3_2aecg")
-region = Rect2(307, 0, 307, 700)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_tr1x6"]
-atlas = ExtResource("3_2aecg")
-region = Rect2(614, 0, 307, 700)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_d5akn"]
-atlas = ExtResource("3_2aecg")
-region = Rect2(921, 0, 307, 700)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wbtxt"]
-atlas = ExtResource("3_2aecg")
-region = Rect2(1228, 0, 307, 700)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_x2fux"]
-atlas = ExtResource("4_6dial")
-region = Rect2(0, 0, 307, 800)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s7g0b"]
-atlas = ExtResource("4_6dial")
-region = Rect2(307, 0, 307, 800)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mmfjm"]
-atlas = ExtResource("4_6dial")
-region = Rect2(614, 0, 307, 800)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_k8ld0"]
-atlas = ExtResource("4_6dial")
-region = Rect2(921, 0, 307, 800)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mbb35"]
-atlas = ExtResource("4_6dial")
-region = Rect2(1228, 0, 307, 800)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_iw4em"]
-animations = [{
-"frames": [],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7nomh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_1s4pk")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x2xxo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2cbcq")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_isj1j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_so66j")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_tr1x6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_d5akn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wbtxt")
-}],
-"loop": true,
-"name": &"jumping",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_x2fux")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s7g0b")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mmfjm")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_k8ld0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mbb35")
-}],
-"loop": true,
-"name": &"walking",
-"speed": 5.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hnsmf"]
-size = Vector2(18, 25.5)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_go7sj"]
 texture = ExtResource("2_5xbjy")
@@ -288,27 +160,6 @@ sources/0 = SubResource("TileSetAtlasSource_7gny6")
 
 [node name="level1" type="Node2D"]
 
-[node name="vv_cheese" type="CharacterBody2D" parent="."]
-visible = false
-z_index = 1
-position = Vector2(-594, 105)
-script = ExtResource("1_go7sj")
-metadata/_edit_group_ = true
-
-[node name="animatedSprite" type="AnimatedSprite2D" parent="vv_cheese"]
-visible = false
-position = Vector2(-147.375, 150.164)
-scale = Vector2(0.0951923, 0.0879774)
-sprite_frames = SubResource("SpriteFrames_iw4em")
-animation = &"idle"
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="vv_cheese"]
-visible = false
-position = Vector2(-150, 151)
-shape = SubResource("RectangleShape2D_hnsmf")
-metadata/_edit_group_ = true
-
 [node name="Hormiga" parent="." instance=ExtResource("1_15mv3")]
 z_index = 1
 position = Vector2(184, -65)
@@ -356,18 +207,3 @@ texture = ExtResource("5_fcfvj")
 stream = ExtResource("7_pa8r4")
 volume_db = -10.272
 autoplay = true
-
-[node name="CheeseIdle" type="Sprite2D" parent="."]
-position = Vector2(-410, 156)
-scale = Vector2(0.0847575, 0.0823975)
-texture = ExtResource("2_7gny6")
-
-[node name="CheeseWalking" type="Sprite2D" parent="."]
-position = Vector2(-275, 154.813)
-scale = Vector2(0.0813802, 0.074585)
-texture = ExtResource("4_6dial")
-
-[node name="CheeseJumping" type="Sprite2D" parent="."]
-position = Vector2(-272, 187)
-scale = Vector2(0.0806478, 0.086792)
-texture = ExtResource("3_2aecg")
