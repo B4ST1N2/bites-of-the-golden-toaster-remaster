@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://cis3i36oet384"]
 
 [ext_resource type="Script" uid="uid://c2ehf1v7dm7hy" path="res://Scripts/menu.gd" id="1_vjb58"]
-[ext_resource type="Texture2D" uid="uid://cdjwbfloxfbid" path="res://Images/ChatGPT Image 31 ago 2025, 10_09_21.png" id="2_mhnvy"]
+[ext_resource type="Texture2D" uid="uid://cdjwbfloxfbid" path="res://Images/Bite of the gold toaster.png" id="2_mhnvy"]
 [ext_resource type="AudioStream" uid="uid://latdpei267pb" path="res://MusicAndSounds/Music/POL-spinning-gears-short.wav" id="3_con2f"]
 [ext_resource type="AudioStream" uid="uid://c8i6exyxx3rwg" path="res://MusicAndSounds/Sounds/confirmation_004.ogg" id="3_mhnvy"]
 
