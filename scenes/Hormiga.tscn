@@ -67,7 +67,7 @@ size = Vector2(34, 33)
 script = ExtResource("1_aytn8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(259.125, 158)
+position = Vector2(1.125, -52.9998)
 scale = Vector2(0.140381, 0.134766)
 texture = ExtResource("1_s8o65")
 hframes = 4
@@ -78,19 +78,25 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(259, 211.5)
+position = Vector2(1, 0.500183)
 shape = SubResource("RectangleShape2D_aytn8")
 
 [node name="Area2D" type="Area2D" parent="."]
+position = Vector2(1, -0.999817)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(259, 209.5)
 shape = SubResource("RectangleShape2D_sv0pt")
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(240, 194)
+position = Vector2(-22, -16)
 scale = Vector2(0.7, 0.7)
-target_position = Vector2(0, 47.1429)
+target_position = Vector2(0, 54.2857)
+collision_mask = 4
+
+[node name="WallCheck" type="RayCast2D" parent="."]
+position = Vector2(-21, 0)
+rotation = 1.5708
+target_position = Vector2(4.37114e-07, 10)
 collision_mask = 4
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

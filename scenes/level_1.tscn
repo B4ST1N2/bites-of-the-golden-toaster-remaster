@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cic8tw5ov4lyo" path="res://scenes/ss_bread.tscn" id="1_rus8k"]
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="2_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://e7gh7lktsvvq" path="res://Rocky Roads/Tilesets/tileset_forest.png" id="3_4nkto"]
-[ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_ham/walking/Ham_walking.png" id="4_5xbjy"]
+[ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_ham/idle/walking/Ham_walking.png" id="4_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://e3nghfmuw8ar" path="res://Rocky Roads/Deco/clouds.png" id="5_2os1m"]
 [ext_resource type="Texture2D" uid="uid://xvudb73v5ogx" path="res://Rocky Roads/Characters/SS_bread/idle/Bread_idle.png" id="5_fcfvj"]
 [ext_resource type="Texture2D" uid="uid://c652y0jqg8dol" path="res://Rocky Roads/Characters/C_R_ham/idle/Ham_idle.png" id="6_pa8r4"]
@@ -169,6 +169,7 @@ texture = ExtResource("3_4nkto")
 
 [sub_resource type="TileSet" id="TileSet_e3sih"]
 physics_layer_0/collision_layer = 5
+physics_layer_0/collision_mask = 5
 sources/0 = SubResource("TileSetAtlasSource_15mv3")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e3sih"]
@@ -182,13 +183,20 @@ corner_radius_bottom_left = 15
 
 [node name="Hormiga" parent="." instance=ExtResource("1_15mv3")]
 z_index = 1
-position = Vector2(653, -99)
-collision_layer = 5
+position = Vector2(416, 145)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Hormiga2" parent="." instance=ExtResource("1_15mv3")]
+z_index = 1
+position = Vector2(810, 112)
+collision_layer = 4
+collision_mask = 4
 
 [node name="ss_bread" parent="." instance=ExtResource("1_rus8k")]
 z_index = 1
 position = Vector2(15, 147)
-collision_layer = 5
+collision_layer = 1
 move_speed = 200.0
 
 [node name="Camera2D" type="Camera2D" parent="ss_bread"]
