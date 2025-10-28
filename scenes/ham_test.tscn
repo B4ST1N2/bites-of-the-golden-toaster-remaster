@@ -1,9 +1,9 @@
-[gd_scene load_steps=21 format=4 uid="uid://dm10mxajlai13"]
+[gd_scene load_steps=21 format=4 uid="uid://bln5ts1rm4ecy"]
 
 [ext_resource type="Texture2D" uid="uid://bcjcbp4cu6fsw" path="res://Rocky Roads/Backgrounds/trees.png" id="1_xpem4"]
 [ext_resource type="Texture2D" uid="uid://e7gh7lktsvvq" path="res://Rocky Roads/Tilesets/tileset_forest.png" id="2_b7tfj"]
 [ext_resource type="Texture2D" uid="uid://b326egcie6oa8" path="res://Rocky Roads/Characters/C_R_ham/walking/Ham_walking.png" id="3_fbxgf"]
-[ext_resource type="Script" uid="uid://bhklfrc4p5rb6" path="res://scenes/c_r_ham.gd" id="3_xpem4"]
+[ext_resource type="Script" path="res://scenes/c_r_ham.gd" id="3_xpem4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ucq0w"]
 texture = ExtResource("1_xpem4")
