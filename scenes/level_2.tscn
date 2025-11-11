@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://bpewxlt4uwsq1"]
+[gd_scene load_steps=31 format=4 uid="uid://bpewxlt4uwsq1"]
 
 [ext_resource type="Texture2D" uid="uid://djf752ebhstk6" path="res://Pixel City Essentials Buildings & Characters Pack/85/Building/Library/Library.png" id="2_jm1iu"]
 [ext_resource type="Texture2D" uid="uid://s71ec76mqlha" path="res://House-interior-pixel-art/FridgePixelQuest-34x81.png" id="3_b4j7a"]
@@ -22,6 +22,7 @@
 [ext_resource type="Texture2D" uid="uid://du3yd0kvw8csq" path="res://House-interior-pixel-art/Sprite-0015-76x29.png" id="16_bgibu"]
 [ext_resource type="AudioStream" uid="uid://lhg5g1336dwo" path="res://MusicAndSounds/Music/POL-test-your-skills-short.wav" id="18_1sb0y"]
 [ext_resource type="Texture2D" uid="uid://dphrvmnsixhnj" path="res://Rocky Roads/Deco/lava.png" id="21_k6a82"]
+[ext_resource type="PackedScene" uid="uid://5fj6ajo3nloc" path="res://scenes/final_boss.tscn" id="23_vhnap"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pbc48"]
 texture = ExtResource("2_jm1iu")
@@ -3287,3 +3288,6 @@ texture = ExtResource("21_k6a82")
 position = Vector2(5985, 3082)
 scale = Vector2(8.08333, 3.20833)
 texture = ExtResource("21_k6a82")
+
+[node name="FinalBoss" parent="." instance=ExtResource("23_vhnap")]
+position = Vector2(5985, 3117)
