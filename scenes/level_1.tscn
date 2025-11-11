@@ -197,7 +197,7 @@ collision_mask = 4
 
 [node name="ss_bread" parent="." instance=ExtResource("1_rus8k")]
 z_index = 1
-position = Vector2(69, 146)
+position = Vector2(24, 144)
 collision_layer = 1
 move_speed = 200.0
 
@@ -299,8 +299,8 @@ scale = Vector2(1.29687, 1.98438)
 texture = ExtResource("12_1s4pk")
 
 [node name="Banana" type="Sprite2D" parent="tilemapLayers"]
-position = Vector2(-7.5, 56.25)
-scale = Vector2(1.3125, 1.28125)
+position = Vector2(9, 56.25)
+scale = Vector2(1.25, 1.28125)
 texture = ExtResource("12_x2xxo")
 
 [node name="Rock" type="Sprite2D" parent="tilemapLayers"]
@@ -317,8 +317,9 @@ scale = Vector2(0.8375, 4.59375)
 texture = ExtResource("15_isj1j")
 
 [node name="PassNevel" parent="tilemapLayers" instance=ExtResource("22_tr1x6")]
+visible = false
 z_index = 2
-position = Vector2(-10, 57)
+position = Vector2(10, 55)
 
 [node name="BreadIdle" type="Sprite2D" parent="."]
 visible = false
