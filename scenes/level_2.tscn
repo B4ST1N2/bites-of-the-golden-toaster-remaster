@@ -2903,7 +2903,7 @@ format = 2
 position = Vector2(3379, -46)
 stream = ExtResource("7_y0kc7")
 autoplay = true
-max_distance = 2867.0
+max_distance = 3200.0
 
 [node name="TileMapLayer" type="TileMapLayer" parent="TileMap"]
 position = Vector2(156, 91)
